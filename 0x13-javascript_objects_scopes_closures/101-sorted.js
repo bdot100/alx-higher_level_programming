@@ -9,6 +9,6 @@ const resultDict = {};
 for (let i = 0; i < values.length; i++) {
   resultDict[JSON.stringify(values[i])] = [];
   matched = dictKeys.filter(key => dict[key] === values[i]);
-  matched.forEach(item => result[JSON.stringify(values[i])].push(item));
+  matched.forEach(item => resultDict[JSON.stringify(values[i])].push(item));
 }
 console.log(resultDict);
