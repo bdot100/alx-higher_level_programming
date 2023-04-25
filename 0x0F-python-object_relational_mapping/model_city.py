@@ -5,7 +5,6 @@ from model_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
-
 class City(Base):
     """
     Tis class defines each city
