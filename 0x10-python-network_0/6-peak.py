@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This script find the peak from an unsorted integer """
 
+
 def find_peak(list_of_integers):
     """
     Args: list_of_integers(int): list of integers to find the peak from
