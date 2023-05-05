@@ -7,11 +7,11 @@ def find_peak(list_of_integers):
     Returns: Peak from the list or None
     """
 
-    left, right = 0, len(nums) - 1
+    left, right = 0, len(list_of_integers) - 1
     while left < right:
         mid = (left + right) // 2
-        if nums[mid] > nums[mid + 1]:
+        if list_of_integers[mid] > list_of_integers[mid + 1]:
             right = mid
         else:
             left = mid + 1
-    return nums[left]
+    return list_of_integers[left]
